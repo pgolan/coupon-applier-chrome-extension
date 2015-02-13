@@ -1,0 +1,107 @@
+{
+  "name": "ValuTag Coupons",
+  "version": "1.0",
+  "manifest_version": 2,
+  "author": "Copperpix",
+  "homepage_url": "http://valuetagapp.com",
+  "description": "Valuetag gets best price for products at every store",
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+  "content_scripts": [
+      {
+          "css": [ "cover2.css" ],
+          "js": [ "jquery.js", "snapdealCoupon.js" ],
+          "matches": [ "*://www.snapdeal.com/*", "*://snapdeal.com/*" ]
+      },
+      {
+          "css": [ "cover.css" ],
+          "js": [ "jquery.js", "infibeamCoupon.js" ],
+          "matches": [ "*://www.infibeam.com/*", "*://infibeam.com/*" ]
+      },
+      {
+          "css": [ "cover.css" ],
+          "js": [ "jquery.js", "indiatimesCoupon.js" ],
+          "matches": [ "*://www.shopping.indiatimes.com//*", "*://shopping.indiatimes.com/*" ]
+      },
+      {
+          "css": [ "cover2.css" ],
+          "js": [ "jquery.js", "ebaycom2.js" ],
+          "matches": [ "*://www.order2.ebay.in/*", "*://order2.ebay.in/*" ]
+      },
+      {
+          "css": [ "cover.css" ],
+          "js": [ "jquery.js", "shopcluesCoupon.js" ],
+          "matches": [ "*://www.secure.shopclues.com/*", "*://secure.shopclues.com/*" ]
+      },
+      {
+          "css": [ "cover2.css" ],
+          "js": [ "jquery.js", "targetCoupon.js" ],
+          "matches": [ "*://www.www-secure.target.com/*", "*://www-secure.target.com/*" ]
+      },
+      {
+          "css": [ "cover2.css" ],
+          "js": [ "jquery.js", "ebaycom.js" ],
+          "matches": [ "http://www.ebay.com/","https://guestcheckout.payments.ebay.com/*","https://checkout.payments.ebay.com/*"]
+      },
+      {
+          "css": [ "cover2.css" ],
+          "js": [ "jquery.js", "officemax.js" ],
+          "matches": ["http://www.officemax.com/cart/*"]
+      },
+      {
+          "css": [ "cover.css" ],
+          "js": [ "jquery.js", "neimanmarcus.js" ],
+          "matches": ["https://www.neimanmarcus.com/en-in/checkout/*"]
+      },
+      {
+          "css": [ "cover2.css" ],
+          "js": [ "jquery.js", "bloomingdales.js" ],
+          "matches": ["http://www1.bloomingdales.com/bag/*","http://www.bloomingdales.com/bag/*"]
+      },
+      {
+          "css": [ "cover.css" ],
+          "js": [ "jquery.js", "jcpenney.js" ],
+          "matches": ["http://www.jcpenney.com/dotcom/jsp/cart/*"]
+      },
+      {
+          "css": [ "cover2.css" ],
+          "js": [ "jquery.js", "gap2.js" ],
+          "matches": ["https://secure-www.gap.com/checkout/*"]
+      },
+      {
+          "css": [ "cover2.css" ],
+          "js": [ "jquery.js", "bluenile.js" ],
+          "matches": ["https://secure.bluenile.com/*"]
+      },
+      {
+          "css": [ "cover2.css" ],
+          "js": [ "jquery.js", "kohls.js" ],
+          "matches": ["http://www.kohls.com/checkout/*"]
+      },
+      {
+          "css": [ "cover.css" ],
+          "js": [ "jquery.js", "harryanddavid.js" ],
+          "matches": ["http://www.harryanddavid.com/*"]
+      },
+      {
+          "css": [ "cover2.css" ],
+          "js": [ "jquery.js", "amazon.js" ],
+          "matches": ["https://www.amazon.in/gp/buy/  payselect/handlers/*","https://www.amazon.com/gp/buy/*"]
+      },
+      {
+          "css": [ "cover2.css" ],
+          "js": [ "jquery.js", "macys.js" ],
+          "matches": ["http://www1.macys.com/bag/*"]
+      }
+
+  ],
+  "web_accessible_resources": [ "valtick128.png", "icon38.png", "img/LoadingCircle_finalani.gif", "img/logo-valtag.png", "img/tweet.png", "img/google.png", "img/fb.png", "img/bestprice.png", "img/close-ico.png", "img/adexmart.png", "img/amazon.png", "img/cromaretail.png", "img/gobol.png", "img/homeshop.png", "img/indiatimes.png", "img/ebay-in.png", "img/green_dust.png", "img/fabfurnish.png", "img/flipkart.png", "img/infibeam.png", "img/naaptol.png", "img/fabfurnish.png", "img/shopclues.png", "img/snapdeal.png", "img/yebhi.png", "img/bookadda.png", "img/rediff.png", "img/uread.png", "img/crossword.png", "img/landmarkonthenet.png"],
+  "icons":  { "128":"valtick128.png" },
+  "browser_action": {
+    "default_icon": {                 
+      "19": "valtick19.png",         
+      "38": "icon38.png"           
+    },
+    "default_title": "Valuetagapp Coupon"
+  },
+  "permissions": [ "http://65.111.164.36/*", "http://valuetagapp.com/", "contextMenus", "notifications", "tabs", "clipboardWrite" ]
+}
